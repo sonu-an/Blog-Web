@@ -11,6 +11,14 @@
 			rel="stylesheet"
 		/>
 		<title>SONU Blog</title>
+		<script>
+			let theme;
+			try {
+				theme = localStorage.getItem("theme");
+			} catch {}
+			document.documentElement.dataset.theme =
+				theme ?? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+		</script>
 	</head>
 	<body class="flex min-h-full flex-col font-sans">
 		<div id="root" class="contents"></div>

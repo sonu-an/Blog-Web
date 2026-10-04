@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
 	--bg: #fafafa;
 	--fg: #18181b;
 	--muted: #52525b;
 	--line: #e4e4e7;
 	--accent: #047857;
+	color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: #09090b;
-		--fg: #f4f4f5;
-		--muted: #a1a1aa;
-		--line: #27272a;
-		--accent: #34d399;
-	}
+/* data-theme is set before first paint by the inline script in index.html */
+:root[data-theme="dark"] {
+	--bg: #09090b;
+	--fg: #f4f4f5;
+	--muted: #a1a1aa;
+	--line: #27272a;
+	--accent: #34d399;
+	color-scheme: dark;
 }
 
 @theme inline {
