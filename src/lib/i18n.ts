@@ -16,13 +16,12 @@ export function useLang(): Lang {
 }
 
 const ko = {
-	nav: { posts: "글", about: "소개", login: "로그인", logout: "로그아웃" },
+	nav: { posts: "글", about: "소개", login: "로그인", logout: "로그아웃", darkMode: "다크 모드" },
 	home: {
-		heroLine1: "만들고, 부딪히고,",
-		heroLine2: "기록합니다.",
-		description: "React, Go, Java로 무언가를 만들며 배운 것들을 정리하는 개인 블로그입니다.",
+		heroTitle: "행복하게 살려고 노력 중입니다.",
+		description: "백엔드 엔지니어",
 		viewPosts: "글 보기",
-		photoAlt: "작업 공간 사진",
+		photoAlt: "나비넥타이를 맨 미어캣 일러스트",
 		recent: "최근 글",
 		viewAll: "전체 보기",
 	},
@@ -38,6 +37,11 @@ const ko = {
 		photoAlt: "프로필 사진",
 		name: "안선우",
 		bio: "프론트엔드와 백엔드를 오가며 일하는 개발자입니다. 이 블로그에는 직접 만들면서 배운 것, 헷갈렸던 것, 다시 찾아볼 것들을 기록합니다.",
+		career: "경력",
+		universityLabel: "대학",
+		university: "경북대학교 컴퓨터학부 글로벌SW융합학과",
+		companyLabel: "회사",
+		company: "株式会社CyberAgent",
 	},
 	login: {
 		title: "로그인",
@@ -51,13 +55,12 @@ const ko = {
 };
 
 const ja: typeof ko = {
-	nav: { posts: "記事", about: "紹介", login: "ログイン", logout: "ログアウト" },
+	nav: { posts: "記事", about: "紹介", login: "ログイン", logout: "ログアウト", darkMode: "ダークモード" },
 	home: {
-		heroLine1: "作って、ぶつかって、",
-		heroLine2: "記録します。",
-		description: "React、Go、Javaで何かを作りながら学んだことをまとめる個人ブログです。",
+		heroTitle: "幸せに生きようと努力中です。",
+		description: "バックエンドエンジニア",
 		viewPosts: "記事を見る",
-		photoAlt: "作業スペースの写真",
+		photoAlt: "蝶ネクタイをしたミーアキャットのイラスト",
 		recent: "最近の記事",
 		viewAll: "すべて見る",
 	},
@@ -73,6 +76,11 @@ const ja: typeof ko = {
 		photoAlt: "プロフィール写真",
 		name: "アン・ソヌ",
 		bio: "フロントエンドとバックエンドを行き来しながら働く開発者です。このブログには、実際に作りながら学んだこと、迷ったこと、あとで見返したいことを記録しています。",
+		career: "経歴",
+		universityLabel: "大学",
+		university: "慶北大学校 コンピュータ学部 グローバルSW融合学科",
+		companyLabel: "会社",
+		company: "株式会社CyberAgent",
 	},
 	login: {
 		title: "ログイン",

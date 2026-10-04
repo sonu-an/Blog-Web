@@ -13,9 +13,7 @@ export function Home() {
 			<section className="grid items-center gap-10 py-16 md:grid-cols-[1.2fr_1fr] md:py-24">
 				<div className="grid gap-6">
 					<h1 className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl">
-						{t.home.heroLine1}
-						<br />
-						{t.home.heroLine2}
+						{t.home.heroTitle}
 					</h1>
 					<p className="max-w-[45ch] text-lg leading-relaxed text-muted">
 						{t.home.description}
@@ -35,12 +33,11 @@ export function Home() {
 						</Link>
 					</div>
 				</div>
-				{/* TODO: replace with your own photo */}
 				<img
-					src="https://picsum.photos/seed/sonu-blog-desk/900/1100"
+					src="/john.jpg"
 					alt={t.home.photoAlt}
-					width={900}
-					height={1100}
+					width={1440}
+					height={1540}
 					fetchPriority="high"
 					className="aspect-[4/5] w-full rounded-md object-cover"
 				/>
